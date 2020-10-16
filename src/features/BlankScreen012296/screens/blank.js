@@ -26,20 +26,12 @@ export default class Blank extends React.Component {
   state = {}
 
   render = () => (
-    <View style={styles.View_1}>
-      <Button
-        title="Press me!"
-        color="#3366FF"
-        textStyle={{
-          fontSize: 12,
-          color: "#000000",
-          textAlign: "center",
-          fontWeight: "normal",
-          fontStyle: "normal"
-        }}
-        style={styles.Button_3}
-        onPress={() => this.props.navigation.navigate("BlankScreen112297")}
-      />
+    <View>
+      <Text>
+        Sample text content sfsdfsfsf sdfsdf sdfsd sdfsdf sdfsdfsdf sdfsd sdfsdf
+        sdfsdf sdfsfsdf fdgdfgdfg
+      </Text>
+      <Button title="Press me!" onPress={() => alert("Pressed!")} />
     </View>
   )
 }
@@ -111,6 +103,7 @@ const styles = StyleSheet.create({
     lineHeight: 12,
     letterSpacing: 0
   },
+
   View_1: {
     marginLeft: 0,
     marginRight: 0,
@@ -140,6 +133,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0,
     borderRadius: 0
   },
+
   Button_3: {
     width: "100%",
     marginLeft: 0,
@@ -170,5 +164,8 @@ const styles = StyleSheet.create({
     textTransform: "none",
     lineHeight: 12,
     letterSpacing: 0
-  }
+  },
+  View_1: {},
+  Text_5: {},
+  Button_3: {}
 })
